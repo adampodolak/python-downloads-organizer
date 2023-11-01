@@ -32,15 +32,15 @@ This script requires the `os` and `shutil` modules, which are part of the Python
 
 ## How It Works
 
-### VBScript File (`run_monitor.vbs`)
+### VBScript File
 
 The VBScript file is responsible for running the batch script in the background. It does so without displaying a command prompt window (`WshShell.Run "{path to batch file}", 0, False`).
 
-### Batch File (`monitor_downloads.bat`)
+### Batch File
 
 The batch file continuously monitors the specified folder for changes in size. When a change is detected (indicating that a new file has been downloaded), it triggers the Python script to organize the downloads folder. The batch file checks for changes every few seconds.
 
-### Python Script (`downloads_organizer.py`)
+### Python Script
 
 The Python script organizes the files in your downloads folder into subfolders based on their file extensions. It creates subfolders for each unique file extension and moves the corresponding files into their respective subfolders.
 
