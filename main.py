@@ -1,8 +1,5 @@
 import os
 import shutil
-import time
-
-time.sleep(1)
 
 downloads_dir = r"{path to downloads folder}"
 
