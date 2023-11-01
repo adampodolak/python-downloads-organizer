@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 REM Specify the folder to monitor
-set "folder_to_monitor=C:\Users\adamp\Downloads\"
+set "folder_to_monitor={path to downloads folder}"
 
 REM Initial size of the folder
 set "initial_size=0"
@@ -15,7 +15,7 @@ for /f %%A in ('dir /a-d /b /s "%folder_to_monitor%" ^| find /c ":"') do set "cu
 REM Check if the size has changed
 if %current_size% neq %initial_size% (
     rem Size has changed, execute your Python script
-    C:\Windows\py.exe C:\Users\adamp\OneDrive\Desktop\Personal-Projects\python-file-organizer\main.py
+    {path to python.exe} {path to main.py}
     set "initial_size=%current_size%"
 )
 

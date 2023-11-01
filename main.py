@@ -4,7 +4,7 @@ import time
 
 time.sleep(1)
 
-downloads_dir = r"C:\Users\adamp\Downloads"
+downloads_dir = r"{path to downloads folder}"
 
 files = os.listdir(downloads_dir)
 
