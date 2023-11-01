@@ -1,4 +1,3 @@
-# python-downloads-organizer
 # Downloads Folder Organizer
 
 This Python script, `downloads_organizer.py`, is a simple tool to organize your downloads folder by moving files into subfolders based on their file extensions. It helps you keep your downloads folder neat and tidy.
